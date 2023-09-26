@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages.css">
+    <title>RoWiki Search page</title>
+</head>
+<body>
+    
+        <header>
+            <button class="menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+            <h2>RoWiki</h2>
+            <button class="search">
+                <ion-icon name="search-outline"></ion-icon>
+            </button>
+        </header>
+        <main>
+            <div class="start-main-search-elemnets">
+                <nav>
+                    <a href="index.html" class="nav-link">Home</a>
+                    <e class="nav-s">/</e>
+                    <a href="search.html" class="nav-link">Search</a>
+                </nav>
+                <div class="input">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="text" name="" id="input" autocomplete="false" onkeyup="search()" >
+                </div>
+                <div class="rezults">Rezultate: 1</div>
+            </div>
+            <div class="articles">
+
+                <li class="article">
+                    <a href="substantivul.html" class="article-t">Substantivul</a>
+                    <div class="article-bottom">
+                        <div class="user-n">By Dollzzy</div>
+                        <div class="abc">|</div>
+                        <div class="date-b">25 sep 2023</div>
+                    </div>
+                </li>
+                <div class="space"></div>
+            </div>
+        </main>
+
+</body>
+    <script src="scripts.js"></script>
+    <!-- Icons link-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
