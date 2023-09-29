@@ -28,5 +28,30 @@ function search() {
     }
     resultsDiv.innerText = "Rezultate: " + count;
   }
+  
+
+let searchbtn,menubtn,close,menu;
+
+  searchbtn = document.querySelector('.search')
+  menubtn = document.querySelector('.menu')
+  menu = document.querySelector('.menu-open')
+  close = document.querySelector('.close')
+
+  searchbtn.addEventListener('click', ()=> {
+    window.location.replace("search.html");
+  })
+
+  menubtn.addEventListener('click', ()=> {
+
+    menu.style.display = 'block'
+
+  })
+
+  close.addEventListener('click', ()=> {
+
+    menu.style.display = 'none'
+
+  })
+
 
  
