@@ -29,5 +29,4 @@ function search() {
     resultsDiv.innerText = "Rezultate: " + count;
   }
 
-  
-  
+ 

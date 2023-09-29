@@ -31,12 +31,13 @@ body
 
 header
 {
-    width: 100%;
+    width: 90%;
     height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 10px;
+    
 }
 
 header button 
@@ -62,9 +63,10 @@ header button ion-icon
     height: 25px;
 }
 
+
 main
 {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: start;
@@ -306,14 +308,13 @@ main
 .bottom-elements-s
 {
     width: 90%;
-    max-width: 500px;
+    max-width: 400px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 40px;
     margin-top: 20px;
-    margin-right: 20px;
 }
 
 .bottom-elements-s div 
@@ -369,3 +370,14 @@ main
     align-items: center;
 }
 
+.t 
+{
+    width: 100%;
+    height: auto;
+    min-height: 30px;
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
