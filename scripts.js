@@ -53,5 +53,45 @@ let searchbtn,menubtn,close,menu;
 
   })
 
-
- 
+  let menupc = document.querySelector('.menu-open-pc');
+  let informatii = document.querySelector('.info-pc');
+  let setari = document.querySelector('.setari-pc');
+  let materi = document.querySelector('.materi-pc');
+  let linkContainer = document.querySelector('.main-pc-menu'); // Containerul pentru linkuri
+  
+  informatii.addEventListener('click', function(event) {
+    event.stopPropagation();
+    menupc.style.display = 'block';
+    
+    // Afișează linkurile corespunzătoare opțiunii "Info"
+    linkContainer.innerHTML = `
+    <a href="Contact.html">Contact</a>
+    <a href="Informatii.html">Informatii</a>
+    <a href="">Creator</a>
+    `;
+  });
+  
+  setari.addEventListener('click', function(event) {
+    event.stopPropagation();
+    menupc.style.display = 'block';
+    
+    // Afișează linkurile corespunzătoare opțiunii "Setari"
+    linkContainer.innerHTML = `
+      Negasit
+    `;
+  });
+  
+  materi.addEventListener('click', function(event) {
+    event.stopPropagation();
+    menupc.style.display = 'block';
+    
+    // Afișează linkurile corespunzătoare opțiunii "Materi"
+    linkContainer.innerHTML = `
+     Negasit
+    `;
+  });
+  
+  document.addEventListener('click', function(event) {
+    menupc.style.display = 'none';
+  });
+  

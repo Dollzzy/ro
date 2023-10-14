@@ -40,6 +40,13 @@ header
     
 }
 
+header h2 
+{
+    position: absolute;
+    left: 40%;
+}
+
+
 header button 
 {
     width: 30px;
@@ -502,4 +509,140 @@ main
     align-items: center;
     padding-left: 10px;
     padding-right: 5px;
+}
+
+
+.info 
+{
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 20px;
+    border: 1px solid blue;
+    background-color: rgb(171, 171, 255);
+    margin-right: 60px;
+}
+
+.menu-PC 
+{
+    width: auto;
+    height: 50px;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-PC div
+{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.menu-PC div:hover 
+{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.menu-open-pc 
+{
+    position: absolute;
+    top: 50px;
+    width: 90%;
+    max-width: 500px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid grey;
+    border-bottom: 3px solid black;
+}
+
+.menu-open-pc main 
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+}
+.menu-open-pc main a 
+{
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.menu-open-pc main a:hover 
+{
+    border-bottom: 2px solid black;
+}
+
+@supports (display: flex) {
+    @media screen and (min-width: 600px) {
+
+        header h2 
+        {
+            position: absolute;
+            left: 50px;
+        }
+
+        .menu 
+        {
+            visibility: hidden;
+        }
+
+        .menu-PC 
+        {
+            visibility:visible;
+        }
+
+        .menu-open 
+        {
+            display: none;
+        }
+
+    }
+}
+
+.sections-select
+{
+    width: 75%;
+    max-width: 450px;
+    height: auto;
+    padding: 5px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+    margin: 10px;
+    border-left: 5px solid grey;
+    background-color: whitesmoke;
+}
+
+.sections-select a 
+{
+    text-decoration: none
+}
+
+.sections-select h2 
+{
+    padding: none;
+    margin: 0;
+    font-weight: 400;
 }
